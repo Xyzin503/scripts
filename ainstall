@@ -1,5 +1,6 @@
 sudo echo
 sh <(curl -L https://nixos.org/nix/install) --daemon
+apt install zsh tmux wget curl git nano -y
 cd ~
 git clone https://github.com/gpakosz/.tmux.git
 cp .tmux/.tmux.conf .
