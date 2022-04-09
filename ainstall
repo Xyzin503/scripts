@@ -1,0 +1,9 @@
+sudo echo
+sh <(curl -L https://nixos.org/nix/install) --daemon
+cd ~
+git clone https://github.com/gpakosz/.tmux.git
+cp .tmux/.tmux.conf .
+cp .tmux/.tmux.conf.local .
+mkdir $HOME/.k 
+git clone git@github.com:supercrabtree/k.git $HOME/.k
+echo 'source $HOME/.k/k.sh' >> $HOME/.zshrc
